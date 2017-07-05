@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox fx:id="mainFrame" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../../../../../styles/bootstrap3.css"
+      xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.rjs.javafx.test.javafx.views.MainController">
+	<children>
+		<MenuBar VBox.vgrow="NEVER">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#newTDP" text="New"/>
+						<MenuItem mnemonicParsing="false" onAction="#openTDP" text="Open…"/>
+						<Menu mnemonicParsing="false" text="Open Recent"/>
+						<SeparatorMenuItem mnemonicParsing="false"/>
+						<MenuItem mnemonicParsing="false" onAction="#saveTDP" text="Save"/>
+						<MenuItem mnemonicParsing="false" onAction="#saveTDPAs" text="Save As…"/>
+						<MenuItem mnemonicParsing="false" onAction="#closeTDP" text="Close"/>
+						<SeparatorMenuItem mnemonicParsing="false"/>
+						<Menu mnemonicParsing="false" text="Export">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#showExcelExportOptions"
+								          text="Excel Report"/>
+								<MenuItem mnemonicParsing="false" onAction="#showPDFExportOptions" text="PDF Report"/>
+								<MenuItem mnemonicParsing="false" onAction="#showExportBalloonedDwgOptions"
+								          text="Ballooned Drawing"/>
+								<MenuItem mnemonicParsing="false" onAction="#showExportTDPOptions" text="TDP"/>
+								<SeparatorMenuItem mnemonicParsing="false"/>
+								<MenuItem mnemonicParsing="false" onAction="#showExportToNetInspectOptions"
+								          text="Net-Inspect"/>
+								<MenuItem mnemonicParsing="false" onAction="#showExportToProLinkOptions"
+								          text="ProLink"/>
+							</items>
+						</Menu>
+						<SeparatorMenuItem mnemonicParsing="false"/>
+						<MenuItem mnemonicParsing="false" onAction="#exitDiscus" text="Quit"/>
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Undo"/>
+						<MenuItem mnemonicParsing="false" text="Redo"/>
+						<SeparatorMenuItem mnemonicParsing="false"/>
+						<MenuItem mnemonicParsing="false" text="Cut"/>
+						<MenuItem mnemonicParsing="false" text="Copy"/>
+						<MenuItem mnemonicParsing="false" text="Paste"/>
+						<MenuItem mnemonicParsing="false" text="Delete"/>
+						<SeparatorMenuItem mnemonicParsing="false"/>
+						<MenuItem mnemonicParsing="false" text="Select All"/>
+						<MenuItem mnemonicParsing="false" text="Unselect All"/>
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About MyHelloApp"/>
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+			<children>
+				<Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;"
+				       text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f"
+				       wrapText="false">
+					<font>
+						<Font size="18.0"/>
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+	</children>
+</VBox>
